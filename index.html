@@ -241,21 +241,19 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
-  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" style="display:none" aria-hidden="true">
-    <input type="hidden" name="form-name" value="contact">
-    <p>
-      <label>Leave this field empty <input name="bot-field"></label>
-    </p>
-    <p>
-      <label>Name <input type="text" name="name"></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email"></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
+  <div style="display:none" aria-hidden="true">
+    <form name="contact" netlify>
+      <p>
+        <label>Name <input type="text" name="name"></label>
+      </p>
+      <p>
+        <label>Email <input type="email" name="email"></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </div>
 </body>
 </html>
 
