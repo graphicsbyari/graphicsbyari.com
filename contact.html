@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Graphics by Ari</title>
+  <meta name="description" content="Contact Graphics by Ari to discuss branding, content creation and social media management services.">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-lightmode.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-darkmode.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-lightmode.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-lightmode.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a href="index.html" class="brand" aria-label="Graphics by Ari home">
+        <img src="assets/images/ari-logo.png" onerror="this.onerror=null;this.src='assets/images/logo.svg';" alt="Graphics by Ari logo" class="site-logo">
+      </a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-image-key="contactHero" data-image-type="background">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="accent-script">Contact</p>
+        <h1>Let Us Build Your Next Creative Campaign</h1>
+        <p>Share your goals and services of interest. Graphics by Ari will follow up with next steps for your custom project plan.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="form-card">
+          <span class="eyebrow">Inquiry Form</span>
+          <h2 class="section-title">Tell Us About Your Business</h2>
+          <form id="contact-form" action="#" method="post">
+            <div class="input-wrap">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-wrap">
+              <label for="business">Business Name</label>
+              <input type="text" id="business" name="business" required>
+            </div>
+            <div class="input-wrap">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-wrap">
+              <label for="service">Services Interested In</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="branding-design">Branding and Design</option>
+                <option value="content-creation">Content Creation</option>
+                <option value="social-media-management">Social Media Management</option>
+                <option value="content-production-day">Content Production Day</option>
+                <option value="full-service">Full Service Package</option>
+              </select>
+            </div>
+            <input type="submit" value="Send Inquiry">
+          </form>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </div>
+
+        <aside class="contact-card">
+          <span class="eyebrow">Service Area</span>
+          <h2 class="section-title">Based in Connecticut</h2>
+          <p>Graphics by Ari serves businesses across Connecticut and is open to travel to New York and surrounding areas for client sessions and content production days.</p>
+          <p><strong>Email:</strong> <a href="mailto:design@graphicsbyari.com">design@graphicsbyari.com</a></p>
+          <p><a href="https://linktr.ee/graphicsbyari"><strong>Follow us on Instagram, Facebook, & TikTok:</strong> @graphicsbyari</a></p>
+          <p><strong>Availability:</strong> By appointment only.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Graphics by Ari home">
+            <img src="assets/images/footer-logo.png" onerror="this.onerror=null;this.src='assets/images/logo.svg';" alt="Graphics by Ari logo" class="site-logo">
+          </a>
+          <p>Branding, design and social media services for businesses ready to scale with confidence.</p>
+        </div>
+        <div>
+          <p class="footer-title">Contact</p>
+          <p>Connecticut, United States</p>
+          <p>Open to travel across New York and surrounding areas</p>
+          <p><a href="mailto:design@graphicsbyari.com">design@graphicsbyari.com</a></p>
+        </div>
+        <div class="footer-links">
+          <p class="footer-title">Social</p>
+          <div class="social-icons">
+            <a href="http://www.instagram.com/graphicsbyari" aria-label="Instagram" class="social-icon-link">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="4.5" y="4.5" width="15" height="15" rx="4" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="3.4" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="17.2" cy="6.8" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/graphicsbyari" aria-label="Facebook" class="social-icon-link">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@graphicsbyari?" aria-label="TikTok" class="social-icon-link">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M14 4c.7 1.6 2.1 2.9 3.8 3.2v3.1c-1.5.1-2.9-.3-4.1-1.1v6.6a5 5 0 11-4.4-4.9v3.3a1.9 1.9 0 10-1.6 1.8V8.2h2.3V4z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Graphics by Ari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

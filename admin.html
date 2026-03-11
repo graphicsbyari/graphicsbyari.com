@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Admin | Graphics by Ari</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-lightmode.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-darkmode.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-lightmode.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .admin-wrap {
+      width: min(880px, calc(100% - 2rem));
+      margin: 2.5rem auto;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      background: #fff;
+    }
+
+    .admin-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .admin-status {
+      margin-top: 0.8rem;
+      font-weight: 700;
+    }
+
+    .admin-status.error {
+      color: #a81919;
+    }
+
+    .admin-status.ok {
+      color: #175f58;
+    }
+
+    .admin-list {
+      margin-top: 1.2rem;
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+    }
+
+    .admin-list li {
+      margin-bottom: 0.45rem;
+      color: #445157;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 760px) {
+      .admin-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="admin-wrap">
+    <p class="eyebrow">Admin</p>
+    <h1 class="section-title">Image Uploader</h1>
+    <p class="section-lead">Upload a new image, pick a slot, and this tool will update <code>assets/data/site-images.json</code> for you.</p>
+
+    <form id="upload-form">
+      <div class="admin-grid">
+        <div class="input-wrap">
+          <label for="slot">Image Slot</label>
+          <select id="slot" name="slot" required></select>
+        </div>
+
+        <div class="input-wrap">
+          <label for="image">Image File</label>
+          <input id="image" name="image" type="file" accept="image/*" required>
+        </div>
+      </div>
+
+      <button type="submit">Upload and Update Slot</button>
+      <p id="status" class="admin-status" aria-live="polite"></p>
+    </form>
+
+    <section class="admin-list">
+      <h2 class="section-title">Current Slot Map</h2>
+      <ul id="slot-map-list"></ul>
+    </section>
+  </main>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿[
+  { "key": "homeHero", "label": "Home Hero" },
+  { "key": "aboutHero", "label": "About Hero" },
+  { "key": "servicesHero", "label": "Services Hero" },
+  { "key": "contactHero", "label": "Contact Hero" },
+  { "key": "aboutPreview", "label": "About Preview Image" },
+  { "key": "caseStudy1", "label": "Case Study 1" },
+  { "key": "caseStudy2", "label": "Case Study 2" },
+  { "key": "caseStudy3", "label": "Case Study 3" },
+  { "key": "serviceBranding", "label": "Service: Branding" },
+  { "key": "serviceContent", "label": "Service: Content" },
+  { "key": "serviceSocial", "label": "Service: Social" },
+  { "key": "productionDays", "label": "Production Days" }
+]

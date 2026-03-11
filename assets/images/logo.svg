@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="260" height="64" viewBox="0 0 260 64" role="img" aria-label="Graphics by Ari">
+  <rect width="260" height="64" fill="white"/>
+  <circle cx="32" cy="32" r="21" fill="#41c7be"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Raleway, Arial, sans-serif" font-weight="800" font-size="20" fill="#0f0f0f">GA</text>
+  <text x="67" y="30" font-family="Raleway, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2" fill="#0f0f0f">GRAPHICS</text>
+  <text x="67" y="49" font-family="Raleway, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5" fill="#0f0f0f">BY ARI</text>
+</svg>
