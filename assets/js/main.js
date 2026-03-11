@@ -1,30 +1,21 @@
 ﻿(function () {
   const fallbackImages = {
     homeHero: "assets/images/home-hero.png",
-    aboutHero: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2000&q=80",
-    servicesHero: "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=2000&q=80",
-    contactHero: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=2000&q=80",
-    aboutPreview: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=80",
-    caseStudy1: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
-    caseStudy2: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1200&q=80",
-    caseStudy3: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-    serviceBranding: "https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&w=1400&q=80",
-    serviceContent: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80",
-    serviceSocial: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1400&q=80",
-    productionDays: "https://images.unsplash.com/photo-1593697821028-7f0d6f85f685?auto=format&fit=crop&w=1400&q=80"
+    aboutHero: "assets/uploads/graphicsbyari-com-website-banners-1-1773124209428.png",
+    servicesHero: "assets/uploads/graphicsbyari-com-website-banners-2-1773124749392.png",
+    contactHero: "assets/uploads/graphicsbyari-com-website-banners-3-1773126194612.png",
+    aboutPreview: "assets/uploads/untitled1371_20260310021230-png-1773123784752.png",
+    caseStudy1: "assets/uploads/img_3743-jpg-1773120929496.jpg",
+    caseStudy2: "assets/uploads/db-behance-1773120996926.png",
+    caseStudy3: "assets/uploads/rebecca-b-cover-1773121730688.png",
+    serviceBranding: "assets/uploads/_cover-1-1773125232073.png",
+    serviceContent: "assets/uploads/_cover-1773124952760.png",
+    serviceSocial: "assets/uploads/ingmar-r7dxww7fyh8-unsplash-1773125919132.jpg",
+    productionDays: "assets/uploads/07cd35e8-5fa4-4789-bf10-cfef565f3343-1773120225835.jpg"
   };
 
   function loadImages() {
-    return fetch("assets/data/site-images.json", { cache: "no-store" })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Image manifest not found");
-        }
-        return response.json();
-      })
-      .catch(function () {
-        return fallbackImages;
-      });
+    return Promise.resolve(fallbackImages);
   }
 
   function applyImages(imageMap) {
