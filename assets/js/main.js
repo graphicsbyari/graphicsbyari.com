@@ -48,19 +48,6 @@
     });
   }
 
-  function initContactForm() {
-    const form = document.getElementById("contact-form");
-    const status = document.getElementById("form-status");
-    if (!form || !status) {
-      return;
-    }
-
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      status.textContent = "Thanks for reaching out. Your inquiry has been received and Graphics by Ari will follow up soon.";
-      form.reset();
-    });
-  }
 
   function setYear() {
     const node = document.getElementById("year");
@@ -136,7 +123,6 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
-    initContactForm();
     setYear();
     initScrollAnimations();
 
