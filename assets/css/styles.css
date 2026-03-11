@@ -92,6 +92,18 @@ img {
   margin: 0 0 0.4rem;
 }
 
+.hero .accent-script {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+}
+
+.home-page .hero .accent-script {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.accent-script.accent-script-lg {
+  font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+}
+
 .hero-kicker {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -513,6 +525,8 @@ input[type="submit"]:hover {
   gap: 2rem;
   align-items: center;
 }
+
+
 
 .about-preview img {
   width: 100%;
