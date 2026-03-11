@@ -514,9 +514,17 @@ input[type="submit"]:hover {
 
 .stars {
   margin: 0 0 0.7rem;
-  letter-spacing: 0.12em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
   color: var(--teal) !important;
   font-size: 0.95rem;
+}
+
+.stars svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  display: block;
 }
 
 .about-preview {
