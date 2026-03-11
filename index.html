@@ -9,7 +9,8 @@
   <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-darkmode.png" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-lightmode.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-lightmode.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png"`r`n  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -240,7 +241,7 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
-  <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" style="display:none" aria-hidden="true">
     <input type="hidden" name="form-name" value="contact">
     <p>
       <label>Leave this field empty <input name="bot-field"></label>
@@ -254,8 +255,10 @@
     <p>
       <button type="submit">Send</button>
     </p>
-  </form></body>
+  </form>
+</body>
 </html>
+
 
 
 
