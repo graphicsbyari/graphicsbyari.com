@@ -38,13 +38,26 @@
   function initNav() {
     const toggle = document.querySelector(".nav-toggle");
     const nav = document.getElementById("site-nav");
+    const checkbox = document.querySelector(".nav-toggle-input");
     if (!toggle || !nav) {
+      return;
+    }
+
+    function syncState() {
+      const isOpen = checkbox ? checkbox.checked : nav.classList.contains("open");
+      nav.classList.toggle("open", isOpen);
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+
+    if (checkbox) {
+      checkbox.addEventListener("change", syncState);
+      syncState();
       return;
     }
 
     toggle.addEventListener("click", function () {
       nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", nav.classList.contains("open") ? "true" : "false");
+      syncState();
     });
   }
 

@@ -9,7 +9,8 @@
   <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-darkmode.png" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-lightmode.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-lightmode.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png"`r`n  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -20,7 +21,11 @@
       <a href="index.html" class="brand" aria-label="Graphics by Ari home">
         <img src="assets/images/ari-logo.png" onerror="this.onerror=null;this.src='assets/images/logo.svg';" alt="Graphics by Ari logo" class="site-logo">
       </a>
-      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle" role="button" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger" aria-hidden="true"></span>
+      </label>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -148,7 +153,7 @@
 
     <section class="section cta-band">
       <div class="container">
-        <p class="accent-script">Batch your content with intention</p>
+        <p class="accent-script accent-script-lg">Batch your content with intention</p>
         <h2 class="section-title">Book a Content Production Day</h2>
         <p>Reserve a focused session to produce a full library of social-ready assets so your business can post consistently without scrambling for content.</p>
         <a href="contact.html" class="btn">Start Your Project</a>
@@ -201,5 +206,8 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
 
 

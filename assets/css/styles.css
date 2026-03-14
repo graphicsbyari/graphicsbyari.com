@@ -126,6 +126,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  position: relative;
 }
 
 .brand {
@@ -143,6 +144,13 @@ img {
   display: flex;
   align-items: center;
   gap: 1.4rem;
+  z-index: 50;
+}
+
+.nav-toggle-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .site-nav a {
@@ -177,10 +185,59 @@ img {
   display: none;
   border: 1px solid var(--line);
   background: var(--white);
-  padding: 0.5rem 0.7rem;
+  padding: 0;
+  width: 44px;
+  height: 44px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.08em;
+  position: relative;
+  z-index: 51;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: #1d2629;
+  display: block;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: #1d2629;
+  transition: transform 0.2s ease, top 0.2s ease, opacity 0.2s ease;
+}
+
+.hamburger::before {
+  top: -6px;
+}
+
+.hamburger::after {
+  top: 6px;
+}
+
+.nav-toggle-input:checked + .nav-toggle .hamburger {
+  background: transparent;
+}
+
+.nav-toggle-input:checked + .nav-toggle .hamburger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle-input:checked + .nav-toggle .hamburger::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .hero {
@@ -883,6 +940,13 @@ textarea:focus {
   }
 
   .site-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-toggle-input:checked + .nav-toggle + .site-nav {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;

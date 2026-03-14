@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,7 +21,11 @@
       <a href="index.html" class="brand" aria-label="Graphics by Ari home">
         <img src="assets/images/ari-logo.png" onerror="this.onerror=null;this.src='assets/images/logo.svg';" alt="Graphics by Ari logo" class="site-logo">
       </a>
-      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle" role="button" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger" aria-hidden="true"></span>
+      </label>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -88,5 +92,7 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
 
 
