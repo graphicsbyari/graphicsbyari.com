@@ -13,8 +13,7 @@
   font-family: "Blastimo";
   src:
     local("Blastimo"),
-    url("../fonts/blastimo.woff2") format("woff2"),
-    url("../fonts/blastimo.woff") format("woff");
+    url("../fonts/Blastimo.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
